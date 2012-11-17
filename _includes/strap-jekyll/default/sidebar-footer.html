@@ -1,0 +1,46 @@
+<footer id="sidebar-footer">
+  <hr>
+  {% if text.maintained_by %}
+    <div class="btn-group" id="author">
+      <button class="btn disabled">
+        {{ text.maintained_by }}
+      </button>
+      <button class="btn{% if site_author.url == null %} disabled{% endif %}"{% if site_author.url %} data-href="{{ site_author.url }}{% endif %}">
+        {{ site_author.display_name }}
+      </button>
+    </div>
+    <br>
+  {% endif %}
+  {% if text.contact %}
+    <div class="btn-group" id="author-contact">
+      <button class="btn disabled">
+        {{ text.contact }}
+      </button>
+      {% if site_author.email %}
+        <button class="btn" data-href="mailto:{{ site_author.email }}">
+          {{ site_author.email }}
+        </button>
+      {% endif %}
+      {% if site_author.twitter %}
+        <button class="btn" data-href="http://twitter.com/{{ site_author.twitter }}">
+          <img src="{{ site.base_url }}/assets/strap-jekyll/img/icon-twitter.png" alt="Twitter"> on Twitter
+        </button>
+      {% endif %}
+      {% if site_author.github %}
+        <button class="btn" data-href="http://github.com/{{ site_author.github }}">
+          <img src="{{ site.base_url }}/assets/strap-jekyll/img/icon-github.png" alt="GitHub"> on GitHub
+        </button>
+      {% endif %}
+    </div>
+    <br>
+  {% endif %}
+  {% if site.github_star_btn %}
+    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author }}&amp;repo={{ site.repo }}&amp;type=watch" width="62" height="20"></iframe>
+  {% endif %}
+  {% if site.github_fork_btn %}
+    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author }}&amp;repo={{ site.repo }}&amp;type=fork" width="53" height="20"></iframe>
+  {% endif %}
+  {% if site.github_follow_btn %}
+    <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ site.author }}&amp;repo={{ site.repo }}&amp;type=follow" width="180" height="20"></iframe>
+  {% endif %}
+</footer>

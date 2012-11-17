@@ -1,0 +1,52 @@
+{% assign text = site.text %}
+
+{% if page.author %}
+  {% assign page_author = site.authors[page.author] %}
+{% else %}
+  {% assign page_author = site.authors[site.author] %}
+{% endif %}
+
+{% if page.sidebar %}
+  {% assign page_sidebar = site.sidebars[page.sidebar] %}
+{% else %}{% if page.sidebar_by_name %}
+  {% assign page_sidebar = site.sidebars_by_name[page.sidebar_by_name] %}
+{% else %}{% if site.sidebar %}
+  {% assign page_sidebar = site.sidebars[site.sidebar] %}
+{% endif %}{% endif %}{% endif %}
+
+{% assign site_author = site.authors[site.author] %}
+
+{% if site.pages_url %}
+  {% assign site_pages_url = site.pages_url %}
+{% else %}
+  {% capture site_pages_url %}{{ site.author }}.github.com{% endcapture %}
+  {% if site_pages_url == site.repo %}
+    {% capture site_pages_url %}http://{{ site.repo }}{% endcapture %}
+  {% else %}
+    {% capture site_pages_url %}http://{{ site.author }}.github.com/{{ site.repo }}{% endcapture %}
+  {% endif %}
+{% endif %}
+
+{% if site.repo_url %}
+  {% assign site_repo_url = site.repo_url %}
+{% else %}
+  {% capture site_repo_url %}http://github.com/{{ site.author }}/{{ site.repo }}{% endcapture %}
+{% endif %}
+
+{% if page.annotator %}
+  {% assign page_annotator = page.annotator %}
+{% else %}{% if site.annotator %}
+  {% assign page_annotator = site.annotator %}
+{% endif %}{% endif %}
+
+{% if page.analytics %}
+  {% assign page_analytics = page.analytics %}
+{% else %}{% if site.analytics %}
+  {% assign page_analytics = site.analytics %}
+{% endif %}{% endif %}
+
+{% if page.commentDisqusId == true %}
+  {% capture page_commentDisqusId %}{{ site.pages_url }}{{ page.url }}{% endcapture %}
+{% else %}
+  {% assign page_commentDisqusId = page.commentDisqusId %}
+{% endif %}

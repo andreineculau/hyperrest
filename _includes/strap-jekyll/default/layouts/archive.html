@@ -1,0 +1,48 @@
+{% include strap-jekyll/default/vars.html %}
+
+{{ content }}
+
+<h5>{{ site.posts[0].date | date: '%Y %b' }}</h5>
+<ul class="posts unstyled">
+  {% for post in site.posts %}
+    <li class="post">
+      <a href="{{ site.base_url }}{{ post.url }}" title="{{ post.date | date_to_string }}">{{ post.title }}</a>
+      <span class="post-meta">
+        {% capture category_size %}{{ post.categories | size }}{% endcapture %}
+        {% if category_size != '0' %}
+          <span class="post-categories">
+            {% for category in post.categories %}
+              <div class="btn-group">
+                <button class="btn btn-mini btn-inverse">
+                  {{ category }}
+                </button>
+              </div>
+            {% endfor %}
+          </span>
+        {% endif %}
+        {% capture tag_size %}{{ post.tags | size }}{% endcapture %}
+        {% if tag_size != '0' %}
+          <span class="post-tags">
+            {% for tag in post.tags %}
+              <div class="btn-group">
+                <button class="btn btn-mini">
+                  {{ tag }}
+                </button>
+              </div>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </span>
+    </li>
+
+    {% if post.previous %}
+      {% capture yearmonth %}{{ post.date | date: '%Y%m' }}{% endcapture %}
+      {% capture pyearmonth %}{{ post.previous.date | date: '%Y%m' }}{% endcapture %}
+      {% if yearmonth != pyearmonth %}
+        </ul>
+        <h5>{{ post.previous.date | date: '%Y %b' }}</h5>
+        <ul class="posts unstyled">
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul>

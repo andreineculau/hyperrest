@@ -1,0 +1,236 @@
+#github.com
+safe: true
+lsi: false
+pygments: true
+source: "."
+destination: ./_site
+#plugins: ./_plugins
+
+#others
+auto: true
+server: true
+server_port: 4000
+baseurl: &base_url /hyperrest
+base_url: *base_url
+#url: http://localhost:4000
+
+future: false
+markdown: kramdown
+permalink: none
+paginate: true
+#exclude:
+#include:
+#limit_posts: 1
+
+maruku:
+  use_tex: false
+  use_divs: false
+  png_engine: blahtex
+  png_dir: images/latex
+  png_url: /images/latex
+
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - tables
+    - fenced_code_blocks
+    - autolink
+    - strikethrough
+    - lax_html_blocks
+    - space_after_headers
+    - superscript
+    #- no_intraemphasis
+    #- fenced_code
+    #- gh_blockcode
+  render_options:
+    - filter_html
+    - no_images
+    - no_links
+    - no_styles
+    - safe_links_only
+    - with_toc_data
+    - hard_wrap
+    - xhtml
+
+kramdown:
+  auto_id_prefix: ""
+  auto_ids: true
+  entity_output: as_char
+  footnote_nr: 1
+  html_to_native: false
+  latex_headers: ["section", "subsection", "subsubsection", "paragraph", "subparagraph", "subparagraph"]
+  line_width: 72
+  parse_block_html: false
+  parse_span_html: false
+  remove_block_html_tags: true
+  remove_span_html_tags: true
+  smart_quotes: ["lsquo", "rsquo", "ldquo", "rdquo"]
+  template: ""
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
+
+#theme
+name: HyperREST
+description: Don't stress about REST. Just REST!
+pages_url: http://andreineculau.github.com/hyperrest
+repo_url: https://github.com/andreineculau/hyperrest
+repo: hyperrest
+author: andreineculau
+authors:
+  andreineculau:
+    display_name: Andrei Neculau
+    gravatar: a990f5b18007f1a360ebd163626fe3f4
+    email:
+    url: "http://andreineculau.com"
+    twitter: andreineculau
+    github: andreineculau
+#theme.tools
+annotator: null
+analytics: UA-38765969-1
+comments:
+  twitter: true
+  github: true
+  disqus: false
+github_star_btn: true
+github_fork_btn: false
+github_follow_btn: true
+#theme.sidebar
+sidebar: null
+sidebars:
+  - &sidebar_envision
+    title: envision
+    headers:
+      -
+        title: overview
+        url: /ch1_envision/
+      - title: the resources
+        url: /ch1_envision/the_resources.html
+      - title: the relations
+        url: /ch1_envision/the_relations.html
+      - title: the sitemap
+        url: /ch1_envision/the_sitemap.html
+      - title: and visualize
+        url: /ch1_envision/and_visualize.html
+  - &sidebar_spec
+    title: spec
+    headers:
+      -
+        title: overview
+        url: /ch2_spec/
+      - title: the uniform interface
+        url:  /ch2_spec/the_uniform_interface.html
+        items:
+          - title: methods
+            url: /ch2_spec/the_uniform_interface/methods
+          - title: headers
+            url: /ch2_spec/the_uniform_interface/headers
+          - title: status codes
+            url: /ch2_spec/the_uniform_interface/status codes
+          - title: errors
+            url: /ch2_spec/the_uniform_interface/errors
+          - title: query
+            url: /ch2_spec/the_uniform_interface/query
+      - title: the versioning strategy
+        url: /ch2_spec/the_versioning_strategy.html
+      - title: the operations
+        url: /ch2_spec/the_operations.html
+      - title: the relations
+        url: /ch2_spec/the_relations.html
+      - title: the representations
+        url: /ch2_spec/the_representations.html
+      - title: via RESTpi
+        url: /ch2_spec/via_restpi.html
+  - &sidebar_mock
+    title: mock
+    headers:
+      -
+        title: overview
+        url: /ch3_mock/
+      - title: the documentation
+        url: /ch3_mock/the_documentation.html
+      - title: the server
+        url: /ch3_mock/the_server.html
+      - title: via Apiary
+        url: /ch3_mock/via_apiary.html
+      - title: and test
+        url: /ch3_mock/and_test.html
+  - &sidebar_consume
+    title: consume
+    headers:
+      -
+        title: overview
+        url: /ch4_consume/
+      - title: the mock
+        url: /ch4_consume/the_mock.html
+      - title: and iterate
+        url: /ch4_consume/and_iterate.html
+      - title: via HyperREST Client
+        url: /ch4_consume/via_hyperrest_client.html
+      - title: "via HTTP clients"
+        url: /ch4_consume/via_http_clients.html
+  - &sidebar_serve
+    title: serve
+    headers:
+      -
+        title: overview
+        url: /ch5_serve/
+      -
+        title: the uniform interface
+        url: /ch5_serve/the_uniform_interface.html
+        items:
+        - title: via Webmachine
+          url: /ch5_serve/via_webmachine.html
+        - title: the HyperREST Machine
+          url: /ch5_serve/via_hyperrest_machine.html
+        - title: and REST!
+          url: /ch5_serve/and REST!.html
+  - &sidebar_improve
+    title: improve
+    headers:
+      -
+        title: overview
+        url: /ch6_improve/
+      - title: performance
+        url: /ch6_improve/performance.html
+      - title: the representations
+        url: /ch5_serve/the_representations.html
+      - title: the resources
+        url: /ch5_serve/the_resources.html
+  -
+    title: icons
+    url: /icons.html
+sidebars_by_name:
+  envision: *sidebar_envision
+  spec: *sidebar_spec
+  mock: *sidebar_mock
+  consume: *sidebar_consume
+  serve: *sidebar_serve
+  improve: *sidebar_improve
+#theme.text
+text:
+  index: null
+  download_zip: Download ZIP File
+  download_tarball: Download TAR Ball
+  fork_me_on_github: Fork me on <strong>GitHub</strong>
+  maintained_by: maintained by
+  contact: contact
+  toc: Table of Contents
+  related: Related
+  comments: Comments
+  posts: Posts
+  categories: is relevant to
+  tags: and focuses on
+  leave_a_comment_on_twitter_to: Tweet your comment to
+  leave_a_comment_on_github: Want to leave a comment on GitHub?
+  leave_a_comment_on_disqus: Want to discuss?

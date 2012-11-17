@@ -1,0 +1,316 @@
+body {
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+code {
+    color:#333333;
+}
+
+a > code {
+    color:#0088CC;
+}
+a:hover > code {
+    color:#005580;
+}
+
+
+/* Navbar */
+#navbar .dropdown-menu a:not([href]),
+#navbar .dropdown-toggle {
+    cursor:default;
+}
+
+#navbar ul.nav li.dropdown:hover ul.dropdown-menu {
+    display:block;
+    margin-top:0px;
+}
+
+#navbar a.menu:after, .dropdown-toggle:after {
+    content:none;
+}
+
+#navbar .dropdown-menu {
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    -webkit-border-top-left-radius:0px;
+    -webkit-border-top-right-radius:0px;
+    -moz-border-top-left-radius:0px;
+    -moz-border-top-right-radius:0px;
+}
+
+
+/* Sidebar */
+#sidebar .sidebar-nav {
+    padding:9px 0;
+}
+
+#sidebar-toc {
+    display:none;
+}
+
+#author-contact .btn img {
+    width:14px;
+}
+
+#sidebar-footer .btn-group,
+#sidebar-footer .github-btn {
+    margin-top:5px;
+}
+
+#sidebar-footer iframe {
+    border: 0px;
+}
+
+
+/* Headers */
+#content h2[id],
+#content h3[id],
+#content h4[id],
+#content h5[id] {
+    cursor:pointer;
+    padding-top:60px;
+}
+
+
+/* List posts */
+#content ul.posts {}
+
+
+/* Post META */
+#post .post-meta {
+    margin-top:-20px;
+    margin-bottom:40px;
+}
+
+#post .post-meta > div {
+    display:inline-block;
+}
+
+#post .post-meta .post-categories > span,
+#post .post-meta .post-tags > span {
+    font-weight:bold;
+}
+
+#post .post-meta .btn-group:hover ul.dropdown-menu {
+    display:block;
+    margin-top:0px;
+}
+
+.post-meta .post-categories .btn-group button:not(.dropdown-toggle),
+.post-meta .post-tags .btn-group button:not(.dropdown-toggle) {
+    cursor:default;
+}
+
+span.post-meta {
+    margin-left:30px;
+}
+
+.post-meta .post-categories .btn-group,
+.post-meta .post-tags .btn-group {
+    opacity:0.25;
+    filter: alpha(opacity=25);
+}
+
+.post-meta .post-categories:hover .btn-group,
+.post-meta .post-tags:hover .btn-group {
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+
+
+/* Post Comments */
+#post-comments {
+    margin:50px;
+    border-top:1px solid #eee;
+}
+
+/* http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html */
+.comment {
+    background-color: transparent;
+    border-color: #CACACA;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    width: 100%;
+  }
+
+.comment .commentheader {
+    border-bottom-color: #CACACA;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: black;
+    background-image: -webkit-linear-gradient(#F8F8F8,#E1E1E1);
+    background-image: -moz-linear-gradient(#F8F8F8,#E1E1E1);
+    color: black;
+    display: block;
+    float: left;
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 33px;
+    line-height: 33px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px;
+    text-overflow: ellipsis;
+    text-shadow: rgba(255, 255, 255, 0.699219) 1px 1px 0px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.comment .commentheader .commentgravatar {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: white;
+    background-image: none;
+    background-origin: padding-box;
+    border-color: #C8C8C8;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    display: inline-block;
+    float: none;
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-size: 1px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 20px;
+    line-height: 1px;
+    margin-left: 5px;
+    margin-right: 3px;
+    margin-top: -2px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 1px;
+    text-overflow: clip;
+    text-shadow: rgba(255, 255, 255, 0.699219) 1px 1px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 20px;
+}
+
+.comment .commentheader a:link {
+    text-decoration: none;
+}
+
+.comment .commentheader a:hover {
+    border-bottom:1px solid;
+}
+
+.comment .commentheader .commentuser {
+    background-color: transparent;
+    color: black;
+    display: inline;
+    float: none;
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    height: 0px;
+    line-height: 16px;
+    margin-left: 5px;
+    margin-right: 10px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0px;
+    text-overflow: clip;
+    text-shadow: rgba(255, 255, 255, 0.699219) 1px 1px 0px;
+    white-space: nowrap;
+    width: 0px;
+}
+
+.comment .commentheader .commentdate {
+    background-color: transparent;
+    color: #777;
+    display: inline;
+    float: none;
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 0px;
+    line-height: 33px;
+    margin: 0px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0px;
+    text-overflow: clip;
+    text-shadow: rgba(255, 255, 255, 0.699219) 1px 1px 0px;
+    white-space: nowrap;
+    width: 20em;
+}
+
+.comment .commentbody {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    color: #333;
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 40px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0em;
+    position: static;
+    width: 96%;
+    word-wrap: break-word;
+}
+
+.comment .commentbody p {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+.comment .commentbody pre {
+    border: 0px solid #ddd;
+    background-color: #eef;
+    padding: 0 .4em;
+}
+
+.comment .commentbody pre code {
+    border: 0px solid #ddd;
+}
+
+.comment .commentbody code {
+    border: 1px solid #ddd;
+    background-color: #eef;
+    font-size: 85%;
+    padding: 0 .2em;
+}
+
+
+/* Annotator */
+body .annotator-bm-status {
+    top:auto !important;
+    bottom:0px !important;
+    -webkit-transition:bottom .4s ease-out!important;
+    -moz-transition:bottom .4s ease-out!important;
+    -o-transition:bottom .4s ease-out!important;
+    transition:bottom .4s ease-out!important
+}
+
+body .annotator-notice {
+    top:auto !important;
+    bottom:0px !important;
+    -webkit-transition:bottom .4s ease-out!important;
+    -moz-transition:bottom .4s ease-out!important;
+    -o-transition:bottom .4s ease-out!important;
+    transition:bottom .4s ease-out!important
+}
