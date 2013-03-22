@@ -210,8 +210,17 @@ sidebars:
       - title: the resources
         url: /ch5_serve/the_resources.html
   -
-    title: icons
-    url: /icons.html
+    title: misc
+    headers:
+      -
+        title: HTTP decision diagram
+        url: /http_decision_diagram.html
+      -
+        title: icons
+        url: /icons.html
+      -
+        title: meetup
+        url: /meetup.html
 sidebars_by_name:
   envision: *sidebar_envision
   spec: *sidebar_spec
