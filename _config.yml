@@ -16,7 +16,7 @@ base_url: *base_url
 
 future: false
 markdown: kramdown
-permalink: none
+permalink: /:year-:month-:day-:title
 paginate: true
 #exclude:
 #include:
