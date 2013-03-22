@@ -175,6 +175,8 @@ sidebars:
         url: /ch4_consume/the_mock.html
       - title: and iterate
         url: /ch4_consume/and_iterate.html
+      - title: via HyperREST Explorer
+        url: /ch4_consume/via_hyperrest_explorer.html
       - title: via HyperREST Client
         url: /ch4_consume/via_hyperrest_client.html
       - title: "via HTTP clients"
