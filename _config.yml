@@ -100,7 +100,7 @@ annotator: null
 analytics: UA-38765969-1
 comments:
   twitter: true
-  github: true
+  github: false
   disqus: true
 github_star_btn: true
 github_fork_btn: false
@@ -242,6 +242,6 @@ text:
   posts: Posts
   categories: is relevant to
   tags: and focuses on
-  leave_a_comment_on_twitter_to: Tweet your comment to
-  leave_a_comment_on_github: "For those of you 1337, you can just leave a comment on your favourite social hub!"
+  leave_a_comment_on_twitter_to: Tweet about this topic to
+  leave_a_comment_on_github: "For those of you 1337, click here to leave a comment on github!"
   leave_a_comment_on_disqus: ""
