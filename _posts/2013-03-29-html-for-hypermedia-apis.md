@@ -27,7 +27,7 @@ I had a negative outburst though, focused on the first term alone - HTML - and w
 
 You have to be ignorant not to acknowledge the pros - [more about them by Jon Moore](http://codeartisan.blogspot.se/2012/07/using-html-as-media-type-for-your-api.html).
 
-## HTML for APIs - why Yay! can be Yay!-ish
+## HTML for APIs - why Yay!-ish
 
 But you'd also be ignorant if you don't challenge the pros and think about the cons.
 
