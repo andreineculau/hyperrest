@@ -94,25 +94,75 @@ authors:
     email:
     url: "http://andreineculau.com"
     twitter: andreineculau
+    linkedin: andreineculau
     github: andreineculau
 #theme.tools
-annotator: null
-analytics: UA-38765969-1
-comments:
-  twitter: true
-  github: false
-  disqus: true
 github_star_btn: true
 github_fork_btn: false
 github_follow_btn: true
+annotator: null
+comments:
+  enabled: true
+  github:
+    enabled: false
+    author: andreineculau
+    repo: hyperrest
+    id: null # specify on each page/post
+  twitter:
+    enabled: true
+    username: andreineculau
+    text: "re:"
+  disqus:
+    enabled: true
+    shortname: andreineculauhyperrest
+    identifier: null # specify on each page/post
+    url: null # specify on each page/post
+  livefyre:
+    enabled: false
+    site_id: null
+  intensedebate:
+    enabled: false
+    account: null
+  facebook:
+    enabled: false
+    appid: null
+    num_posts: 5
+    width: 580
+    colorscheme: light
+analytics:
+  enabled: true
+  google:
+    enabled: true
+    tracking_id: UA-38765969-1
+  getclicky:
+    enabled: false
+    site_id: null
+  mixpanel:
+    enabled: false
+    token: null
+#theme.text
+text:
+  index: null
+  download_zip: Download ZIP File
+  download_tarball: Download TAR Ball
+  fork_me_on_github: Fork me on <strong>GitHub</strong>
+  maintained_by: maintained by
+  toc: Table of Contents
+  related: Related
+  comments: Comments
+  posts: Posts
+  categories: is relevant to
+  tags: and focuses on
+  leave_a_comment_on_twitter_to: Tweet about this topic to
+  leave_a_comment_on_github: "For those of you 1337, click here to leave a comment on github!"
+  leave_a_comment_on_disqus: ""
 #theme.sidebar
 sidebar: null
 sidebars:
   - &sidebar_envision
     title: envision
     headers:
-      -
-        title: overview
+      - title: overview
         url: /ch1_envision/
       - title: the resources
         url: /ch1_envision/the_resources.html
@@ -125,22 +175,21 @@ sidebars:
   - &sidebar_spec
     title: spec
     headers:
-      -
-        title: overview
+      - title: overview
         url: /ch2_spec/
       - title: the uniform interface
         url:  /ch2_spec/the_uniform_interface.html
         items:
           - title: methods
-            url: /ch2_spec/the_uniform_interface/methods
+            url: /ch2_spec/the_uniform_interface/methods.html
           - title: headers
-            url: /ch2_spec/the_uniform_interface/headers
+            url: /ch2_spec/the_uniform_interface/headers.html
           - title: status codes
-            url: /ch2_spec/the_uniform_interface/status codes
+            url: /ch2_spec/the_uniform_interface/status_codes.html
           - title: errors
-            url: /ch2_spec/the_uniform_interface/errors
+            url: /ch2_spec/the_uniform_interface/errors.html
           - title: query
-            url: /ch2_spec/the_uniform_interface/query
+            url: /ch2_spec/the_uniform_interface/query.html
       - title: the versioning strategy
         url: /ch2_spec/the_versioning_strategy.html
       - title: the operations
@@ -154,17 +203,20 @@ sidebars:
   - &sidebar_mock
     title: mock
     headers:
-      -
-        title: overview
+      - title: overview
         url: /ch3_mock/
       - title: the documentation
         url: /ch3_mock/the_documentation.html
       - title: the server
         url: /ch3_mock/the_server.html
-      - title: via Apiary
-        url: /ch3_mock/via_apiary.html
+        items:
+        - title: via Apiary
+          url: /ch3_mock/the_server/via_apiary.html
       - title: and test
         url: /ch3_mock/and_test.html
+        items:
+        - title: via RedBot
+          url: /ch3_mock/and_test/via_redbot.html
   - &sidebar_consume
     title: consume
     headers:
@@ -173,53 +225,48 @@ sidebars:
         url: /ch4_consume/
       - title: the mock
         url: /ch4_consume/the_mock.html
+        items:
+        - title: via HyperREST Explorer
+          url: /ch4_consume/the_mock/via_hyperrest_explorer.html
+        - title: via HyperREST Client
+          url: /ch4_consume/the_mock/via_hyperrest_client.html
+        - title: "via HTTP clients"
+          url: /ch4_consume/the_mock/via_http_clients.html
       - title: and iterate
         url: /ch4_consume/and_iterate.html
-      - title: via HyperREST Explorer
-        url: /ch4_consume/via_hyperrest_explorer.html
-      - title: via HyperREST Client
-        url: /ch4_consume/via_hyperrest_client.html
-      - title: "via HTTP clients"
-        url: /ch4_consume/via_http_clients.html
   - &sidebar_serve
     title: serve
     headers:
-      -
-        title: overview
+      - title: overview
         url: /ch5_serve/
-      -
-        title: the uniform interface
+      - title: the uniform interface
         url: /ch5_serve/the_uniform_interface.html
         items:
         - title: via Webmachine
-          url: /ch5_serve/via_webmachine.html
-        - title: the HyperREST Machine
-          url: /ch5_serve/via_hyperrest_machine.html
-        - title: and REST!
-          url: /ch5_serve/and REST!.html
+          url: /ch5_serve/the_uniform_interface/via_webmachine.html
+        - title: via HyperREST Machine
+          url: /ch5_serve/the_uniform_interface/via_hyperrest_machine.html
+      - title: and REST!
+        url: /ch5_serve/and_rest.html
   - &sidebar_improve
     title: improve
     headers:
-      -
-        title: overview
+      - title: overview
         url: /ch6_improve/
       - title: performance
         url: /ch6_improve/performance.html
       - title: the representations
-        url: /ch5_serve/the_representations.html
+        url: /ch6_improve/the_representations.html
       - title: the resources
-        url: /ch5_serve/the_resources.html
+        url: /ch6_improve/the_resources.html
   -
-    title: misc
+    title: ...
     headers:
-      -
-        title: HTTP decision diagram
+      - title: HTTP decision diagram
         url: /http_decision_diagram.html
-      -
-        title: icons
+      - title: API icons
         url: /icons.html
-      -
-        title: meetup
+      - title: meetup
         url: /meetup.html
 sidebars_by_name:
   envision: *sidebar_envision
@@ -228,20 +275,3 @@ sidebars_by_name:
   consume: *sidebar_consume
   serve: *sidebar_serve
   improve: *sidebar_improve
-#theme.text
-text:
-  index: null
-  download_zip: Download ZIP File
-  download_tarball: Download TAR Ball
-  fork_me_on_github: Fork me on <strong>GitHub</strong>
-  maintained_by: maintained by
-  contact: contact
-  toc: Table of Contents
-  related: Related
-  comments: Comments
-  posts: Posts
-  categories: is relevant to
-  tags: and focuses on
-  leave_a_comment_on_twitter_to: Tweet about this topic to
-  leave_a_comment_on_github: "For those of you 1337, click here to leave a comment on github!"
-  leave_a_comment_on_disqus: ""
