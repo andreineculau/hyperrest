@@ -1,0 +1,58 @@
+{% if page_comments_disqus_enabled %}
+  <script>
+    var disqus_shortname = '{{ site.comments.disqus.shortname }}',
+        disqus_identifier = '{{ page_comments_disqus_identifier }}',
+        disqus_url = '{{ page_comment_disqus_url }}';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+{% endif %}
+
+{% if page_comments_github_enabled %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+  <script src="{{ site.base_url }}/assets/strap-jekyll/js/strap-jekyll-comments-github.js"></script>
+  <script>
+    $.ajax('https://api.github.com/repos/{{ site.comments.github.author }}/{{ site.comments.github.repo }}/issues/{{ page_comments_github_id }}/comments', {
+      headers: {
+        accept: 'application/vnd.github.full+json'
+      },
+      dataType: 'json',
+      success: loadGithubComments
+    });
+  </script>
+{% endif %}
+
+{% if site.annotator %}
+  <script>
+    window._annotatorConfig = {
+      auth: {
+        tokenUrl: "http://annotateit.org/api/token"
+      },
+      store: {
+        prefix: "http://annotateit.org/api"
+      },
+      tags: !0
+    }
+  </script>
+  <script src="http://assets.annotateit.org/bookmarklet/bootstrap.js"></script>
+{% endif %}
+
+{% if site.analytics and site.analytics.enabled == true and site.analytics.google.enabled == true %}
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.analytics.google.tracking_id }}']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+{% endif %}

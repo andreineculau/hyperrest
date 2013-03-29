@@ -41,6 +41,9 @@ a:hover > code {
 
 
 /* Sidebar */
+#sidebar {
+    width: 370px; /* for when position:fixed */
+}
 #sidebar .sidebar-nav {
     padding:9px 0;
 }
@@ -78,25 +81,6 @@ a:hover > code {
 
 
 /* Post META */
-#post .post-meta {
-    margin-top:-20px;
-    margin-bottom:40px;
-}
-
-#post .post-meta > div {
-    display:inline-block;
-}
-
-#post .post-meta .post-categories > span,
-#post .post-meta .post-tags > span {
-    font-weight:bold;
-}
-
-#post .post-meta .btn-group:hover ul.dropdown-menu {
-    display:block;
-    margin-top:0px;
-}
-
 .post-meta .post-categories .btn-group button:not(.dropdown-toggle),
 .post-meta .post-tags .btn-group button:not(.dropdown-toggle) {
     cursor:default;
@@ -118,10 +102,35 @@ span.post-meta {
     filter: alpha(opacity=100);
 }
 
+.post-meta .post-date {
+    float: right;
+}
+
+
+/* Single post */
+#post .post-meta {
+    margin-top:-20px;
+    margin-bottom:40px;
+}
+
+#post .post-meta > div {
+    display:inline-block;
+}
+
+#post .post-meta .post-categories > span,
+#post .post-meta .post-tags > span {
+    font-weight:bold;
+}
+
+#post .post-meta .btn-group:hover ul.dropdown-menu {
+    display:block;
+    margin-top:0px;
+}
+
 
 /* Post Comments */
 #post-comments {
-    margin:50px;
+    margin:0 50px;
     border-top:1px solid #eee;
 }
 

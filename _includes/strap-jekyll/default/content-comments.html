@@ -1,0 +1,20 @@
+<div id="post-comments">
+  {% if site.comments.twitter and site.comments.twitter.enabled == true and page_author.twitter %}
+    <a href="https://twitter.com/intent/tweet?screen_name={{ page_author.twitter }}&amp;text=re:&amp;url={{ site_pages_url | escape }}{{ page.url | escape }}">{{ text.leave_a_comment_on_twitter_to }} @{{ page_author.twitter }}</a>
+    <br><br>
+  {% endif %}
+
+  {% if page_comments_github_enabled %}
+    <!-- http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html -->
+    <a id="post-comments-url" href="https://github.com/{{ site.comments.github.author }}/{{ site.comments.github.repo }}/issues/{{ page_comments_github_id }}">{{ text.leave_a_comment_on_github }}</a>
+    <div id="post-comments-placeholder"></div>
+    <br><br>
+  {% endif %}
+
+  {% if page_comments_disqus_enabled %}
+    {{ text.leave_a_comment_on_disqus }}
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">{{ text.comments_powered_by_disqus }}<span class="logo-disqus">Disqus</span></a>
+  {% endif %}
+</div>

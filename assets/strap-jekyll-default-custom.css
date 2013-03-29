@@ -15,3 +15,7 @@ blockquote em:before {
 #post .twitter-tweet {
     margin: 25px auto !important;
 }
+
+h2#comments {
+    visibility: hidden;
+}

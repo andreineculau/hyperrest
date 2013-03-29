@@ -1,9 +1,10 @@
 {% assign text = site.text %}
 
+{% assign site_author = site.authors[site.author] %}
 {% if page.author %}
   {% assign page_author = site.authors[page.author] %}
 {% else %}
-  {% assign page_author = site.authors[site.author] %}
+  {% assign page_author = site_author %}
 {% endif %}
 
 {% if page.sidebar %}
@@ -13,8 +14,6 @@
 {% else %}{% if site.sidebar %}
   {% assign page_sidebar = site.sidebars[site.sidebar] %}
 {% endif %}{% endif %}{% endif %}
-
-{% assign site_author = site.authors[site.author] %}
 
 {% if site.pages_url %}
   {% assign site_pages_url = site.pages_url %}
@@ -33,20 +32,43 @@
   {% capture site_repo_url %}http://github.com/{{ site.author }}/{{ site.repo }}{% endcapture %}
 {% endif %}
 
+
 {% if page.annotator %}
   {% assign page_annotator = page.annotator %}
 {% else %}{% if site.annotator %}
   {% assign page_annotator = site.annotator %}
 {% endif %}{% endif %}
 
-{% if page.analytics %}
-  {% assign page_analytics = page.analytics %}
-{% else %}{% if site.analytics %}
-  {% assign page_analytics = site.analytics %}
-{% endif %}{% endif %}
 
-{% if page.commentDisqusId == true %}
-  {% capture page_commentDisqusId %}{{ site.pages_url }}{{ page.url }}{% endcapture %}
+{% if page.comments and page.comments.enabled %}
+  {% assign page_comments_enabled = page.comments.enabled %}
 {% else %}
-  {% assign page_commentDisqusId = page.commentDisqusId %}
+  {% assign page_comments_enabled = site.comments.enabled %}
+{% endif %}
+
+{% if page_comments_enabled == true %}
+  {% if site.comments.github.enabled and page.comments_github_id %}
+    {% assign page_comments_github_enabled = true %}
+    {% assign page_comments_github_id = page.comments_github_id %}
+  {% else %}
+    {% assign page_comments_github_enabled = false %}
+  {% endif %}
+  {% if site.comments.disqus.enabled %}
+    {% assign page_comments_disqus_enabled = true %}
+    {% if page.comments_disqus_identifier %}
+      {% assign page_comments_disqus_identifier = page.comments_disqus_identifier %}
+    {% else %}
+      {% assign page_comments_disqus_identifier = page.url %}
+    {% endif %}
+    {% if page.comments_disqus_url %}
+      {% assign page_comments_disqus_url = page.comments_disqus_url %}
+    {% else %}
+      {% capture page_comments_disqus_url %}{{ site_pages_url }}{{ page.url }}{% endcapture %}
+    {% endif %}
+  {% else %}
+    {% assign page_comments_disqus_enabled = false %}
+  {% endif %}
+{% else %}
+  {% assign page_comments_github_enabled = false %}
+  {% assign page_comments_disqus_enabled = false %}
 {% endif %}

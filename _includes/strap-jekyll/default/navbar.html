@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a id="title" class="brand" href="{{ site.base_url }}/index.html" title="{{ site.description }}">{{ site.name }}</a>
+      <a id="title" class="brand" href="{{ site.base_url }}/index.html" data-toggle="tooltip" data-original-title="{{ site.description }}" data-placement="bottom">{{ site.name }}</a>
       <div class="btn-group pull-right hidden-phone">
         {% include strap-jekyll-default-navbar-right-custom.html %}
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -52,7 +52,7 @@
                 </li>
 
                 {% for item in header.items %}
-                  <li class="{% if item.url == page.url %} active{% endif %}"><a href="{{ site.base_url }}{{ item.url }}">{{ item.title }}</a></li>
+                  <li class="{% if item.url == page.url %} active{% endif %}"><a href="{{ site.base_url }}{{ item.url }}">&middot; {{ item.title }}</a></li>
                 {% endfor %}
               {% endfor %}
               </ul>
