@@ -3,8 +3,6 @@ layout: strap-jekyll-default-post
 title: Developer experience
 categories: consume serve
 tags: developer experience convenience client
-commentIssueId: 2
-commentDisqusId: true
 published: true
 ---
 
