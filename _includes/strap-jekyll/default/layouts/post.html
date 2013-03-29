@@ -15,9 +15,9 @@
     {% if category_size != '0' %}
       <div class="post-categories">
         <span>{{ text.categories }}</span>
-        <div class="btn-group">
         {% for category in page.categories %}
-          {% capture category_size %}{{ site.categories[category] | size }}{% endcapture %}
+          <div class="btn-group">
+            {% capture category_size %}{{ site.categories[category] | size }}{% endcapture %}
             {% if category_size == '0' or category_size == '1' %}
               <button class="btn btn-mini btn-inverse">
                 {{ category }}
@@ -35,17 +35,17 @@
                 {% endfor %}
               </ul>
             {% endif %}
+          </div>
         {% endfor %}
-        </div>
       </div>
     {% endif %}
     {% capture tag_size %}{{ page.tags | size }}{% endcapture %}
     {% if tag_size != '0' %}
       <div class="post-tags">
         <span>{{ text.tags }}</span>
-        <div class="btn-group">
         {% for tag in page.tags %}
-          {% capture tag_size %}{{ site.tags[tag] | size }}{% endcapture %}
+          <div class="btn-group">
+            {% capture tag_size %}{{ site.tags[tag] | size }}{% endcapture %}
             {% if tag_size == '0' or tag_size == '1' %}
               <button class="btn btn-mini">
                 {{ tag }}
@@ -63,8 +63,8 @@
                 {% endfor %}
               </ul>
             {% endif %}
+          </div>
         {% endfor %}
-        </div>
       </div>
     {% endif %}
   </div>
