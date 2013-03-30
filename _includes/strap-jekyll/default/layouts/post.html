@@ -5,15 +5,15 @@
     <h1>
       {{ page.title }}
       {% if page.date %}
-        <small class="post-date">{{ page.date | date_to_string }}</small>
+        <small class="page-date">{{ page.date | date_to_string }}</small>
       {% endif %}
     </h1>
   </div>
 
-  <div class="post-meta">
+  <div class="page-meta">
     {% capture category_size %}{{ page.categories | size }}{% endcapture %}
     {% if category_size != '0' %}
-      <div class="post-categories">
+      <div class="page-categories">
         <span>{{ text.categories }}</span>
         {% for category in page.categories %}
           <div class="btn-group">
@@ -41,7 +41,7 @@
     {% endif %}
     {% capture tag_size %}{{ page.tags | size }}{% endcapture %}
     {% if tag_size != '0' %}
-      <div class="post-tags">
+      <div class="page-tags">
         <span>{{ text.tags }}</span>
         {% for tag in page.tags %}
           <div class="btn-group">
@@ -69,7 +69,9 @@
     {% endif %}
   </div>
 
-  {{ content }}
+  <div class="page-content">
+    {{ content }}
+  </div>
 
   {% if page_comments_enabled == true %}
     <h2 id="comments">{{ text.comments }}</h2>

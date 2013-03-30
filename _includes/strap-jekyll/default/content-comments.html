@@ -1,4 +1,4 @@
-<div id="post-comments">
+<div id="page-comments">
   {% if site.comments.twitter and site.comments.twitter.enabled == true and page_author.twitter %}
     <a href="https://twitter.com/intent/tweet?screen_name={{ page_author.twitter }}&amp;text={{ site.comments.twitter.text }}&amp;url={{ site_pages_url | escape }}{{ page.url | escape }}">{{ text.leave_a_comment_on_twitter_to }} @{{ page_author.twitter }}</a>
     <br><br>
@@ -6,8 +6,8 @@
 
   {% if page_comments_github_enabled %}
     <!-- http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html -->
-    <a id="post-comments-url" href="https://github.com/{{ site.comments.github.author }}/{{ site.comments.github.repo }}/issues/{{ page_comments_github_id }}">{{ text.leave_a_comment_on_github }}</a>
-    <div id="post-comments-placeholder"></div>
+    <a id="page-comments-url" href="https://github.com/{{ site.comments.github.author }}/{{ site.comments.github.repo }}/issues/{{ page_comments_github_id }}">{{ text.leave_a_comment_on_github }}</a>
+    <div id="page-comments-placeholder"></div>
     <br><br>
   {% endif %}
 

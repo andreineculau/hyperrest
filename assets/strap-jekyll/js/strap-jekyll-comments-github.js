@@ -13,7 +13,7 @@
             cbody,
             url;
 
-        url = $('#post-comments-url').attr('href');
+        url = $('#page-comments-url').attr('href');
 
         for (i = 0; i < data.length; i++) {
             cavatar = data[i].user.avatar_url;
@@ -40,7 +40,7 @@
                 cbody +
                 '</div>';
 
-            $('#post-comments-placeholder').append('<div class="comment">' +
+            $('#page-comments-placeholder').append('<div class="comment">' +
                                                    cheader +
                                                    cbody +
                                                    '</div>');

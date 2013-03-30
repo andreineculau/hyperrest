@@ -1,3 +1,5 @@
+@import url('//rawgithub.com/andreineculau/hyperrest-api-icons/v0.0.1/hyperrest-api-icons.css');
+
 blockquote em {
     display: block;
     line-height: 20px;
@@ -8,14 +10,14 @@ blockquote em:before {
     content: '\2014 \00A0';
 }
 
-#post {
+#post .page-content {
     text-align: justify;
 }
 
-#post .twitter-tweet {
+#post .page-content .twitter-tweet {
     margin: 25px auto !important;
 }
 
-h2#comments {
+#post h2#comments {
     visibility: hidden;
 }
