@@ -7,10 +7,10 @@
   {% for post in site.posts %}
     <li class="post" data-toggle="tooltip" data-original-title="{{ post.date | date_to_string }}" data-placement="right">
       <a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a>
-      <span class="post-meta">
+      <span class="page-meta">
         {% capture category_size %}{{ post.categories | size }}{% endcapture %}
         {% if category_size != '0' %}
-          <span class="post-categories">
+          <span class="page-categories">
             <div class="btn-group">
             {% for category in post.categories %}
               <button class="btn btn-mini btn-inverse">
@@ -22,7 +22,7 @@
         {% endif %}
         {% capture tag_size %}{{ post.tags | size }}{% endcapture %}
         {% if tag_size != '0' %}
-          <span class="post-tags">
+          <span class="page-tags">
             <div class="btn-group">
             {% for tag in post.tags %}
               <button class="btn btn-mini">
@@ -32,7 +32,7 @@
             </div>
           </span>
         {% endif %}
-        <span class="post-date muted">
+        <span class="page-date muted">
           {{ post.date | date: '%d' }}
         </span>
       </span>
