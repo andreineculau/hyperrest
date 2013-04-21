@@ -33,7 +33,7 @@ But you'd also be ignorant if you don't challenge the pros and think about the c
 
 * HTML has rich semantics - what do you actually gain from them?
 * HTML has hypermedia support - does it still have support for the whole of HTTP though?
-* HTML is very much standardized - standardized for presentation, yes, but do you need presentation?
+* HTML is very much standardized - standardized ~~for presentation~~ document semantics, yes, but do you need ~~presentation~~ document semantics?
 * HTML has good tools - are they the best tools for your goal though?
 
 [Gustaf lists a good amount of problems when using HTML for your API](http://www.jayway.com/?p=13994). Just think how many of those problems you had before thinking of using HTML for your APIs.
@@ -48,12 +48,12 @@ If we look at the rich semantics of those tags, tags, tags:
 * &lt;link&gt; - granted
 * &lt;title&gt; - good arguments rarely start with "if", but to play along - if X has a title, then place it in this special tag?! Is title considered meta-data? And why not create special tags for each attribute then, or to be fair - if it we were talking about another media-type, would you ask for a title markup?
 * &lt;base&gt; - when did relative links become ambiguous? Links are relative to the resource URI and that's it. It's convenient though when we think how HTML gets created and served, but that doesn't apply to machine-to-machine APIs, does it?
-* &lt;ol&gt;, &lt;ul&gt; - semi-granted, ever had to distinguish between ordered and unordered lists? and since it's HTML, the items are always ordered anyway, just not for *presentation*..
+* &lt;ol&gt;, &lt;ul&gt; - semi-granted, ever had to distinguish between ordered and unordered lists? and since it's HTML, the items are always ordered anyway, just not ~~for *presentation*~~ presented as such.
 * &lt;dl&gt; - granted
 * &lt;form&gt; - granted
 * &lt;style&gt;, &lt;script&gt;, &lt;noscript&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;h1&gt;-&lt;h6&gt;, &lt;hgroup&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;blockquote&gt;, &lt;address&gt;, &lt;p&gt;, &lt;pre&gt;, &lt;span&gt;, &lt;figure&gt;, &lt;figurecaption&gt;, &lt;i&gt;, &lt;b&gt;, &lt;em&gt;, &lt;s&gt;, &lt;u&gt;, &lt;img&gt;, &lt;iframe&gt;, &lt;embed&gt;, &lt;object&gt;, &lt;canvas&gt;, &lt;audio&gt;, &lt;video&gt;, etc. - `(o.O)`
 
-Let me explain my confused face `(o.O)`. When exactly would you request support for these presentation semantics? Obviously in Gustaf's case, but not in machine-to-machine cases.
+Let me explain my confused face `(o.O)`. When exactly would you request support for these ~~presentation~~ document semantics? Obviously in Gustaf's case, but not in machine-to-machine cases.
 
 > Looking back across this list, sure, there's a lot of things that might not be immediately useful, but there's actually quite a large portion of HTML that offers semantics I'd immediately find useful in a programmatic API. *Jon Moore [#](http://codeartisan.blogspot.se/2012/07/using-html-as-media-type-for-your-api.html)*
 
@@ -61,7 +61,7 @@ I count a handful of items to consider, highlighting the hypermedia ones, and tr
 
 > We basically get to reap the benefit of many years of evolution in HTML, where its expressive power has grown and been refined over the years. You'll end up repeating most of the HTML standardization process to get a new media type up to the same level of expressiveness. *Jon Moore [#](http://codeartisan.blogspot.se/2012/07/using-html-as-media-type-for-your-api.html)*
 
-Sure, *if* you're looking for *presentation* expressiveness! With the exception of Gustaf, unless I'm ignorant towards some underground online or offline community, I haven't heard anyone else looking for it or, even better, making a good case from using it.
+Sure, *if* you're looking for ~~*presentation*~~ document expressiveness! With the exception of Gustaf, unless I'm ignorant towards some underground online or offline community, I haven't heard anyone else looking for it or, even better, making a good case from using it.
 
 "human + browser = client for my HTML API" is a very good yay-ish. So you are designing your API not just around the HTML media-type, but around the category of API clients known as browsers. Will you be able to `DELETE`, `PUT`, `PATCH`, `OPTIONS` or whatever custom HTTP method? Will you be able to decide the HTTP request's media-type? Will you be able to trigger a cache-free request? Will you be able to set say `Accept-Language` (just for your API)? Shall I go on?
 
@@ -81,7 +81,7 @@ If you go camping for the first time, do you just go with a knife, or you go wit
 
 > Imagine trying to write a media type to document Facebook's functionality. You'd end up needing to change the spec daily *Jon Moore [#](http://codeartisan.blogspot.se/2012/07/using-html-as-media-type-for-your-api.html)*
 
-I'm convinced [that media-types must carry semantics and syntax](http://blog.programmableweb.com/2011/11/18/rest-api-design-putting-the-type-in-content-type/). In the case of HTML, we're talking mostly presentation semantics. Present &lt;em&gt; content as italic, present &lt;li&gt; inside &lt;ol&gt; by prepending a counter, etc. But you need more than that - you need to know what is inside that &lt;em&gt;, or in that &lt;ol&gt;, what is an address, what is a contact, what is a car, what is a garage, etc. Do you need standards? Yes, you need them in the sense that you're gaining a lot by talking the same language with others, but do you need to create and impose a global standard definition of a car before you can make use of the concept of a car? I'd say no. So I'm sold when it comes to vendor media-types.
+I'm convinced [that media-types must carry semantics and syntax](http://blog.programmableweb.com/2011/11/18/rest-api-design-putting-the-type-in-content-type/). In the case of HTML, we're talking mostly ~~presentation~~ document semantics. ~~Present~~ Mark &lt;em&gt; content as italic, present &lt;li&gt; inside &lt;ol&gt; by prepending a counter, etc. But you need more than that - you need to know what is inside that &lt;em&gt;, or in that &lt;ol&gt;, what is an address, what is a contact, what is a car, what is a garage, etc. Do you need standards? Yes, you need them in the sense that you're gaining a lot by talking the same language with others, but do you need to create and impose a global standard definition of a car before you can make use of the concept of a car? I'd say no. So I'm sold when it comes to vendor media-types.
 
 <div class="well text-center">
     <img src="http://imgs.xkcd.com/comics/standards.png" class="img-polaroid">
@@ -106,3 +106,5 @@ That's smart, but having one API to rule both human and machine consumption was 
 ## TL;DR
 
 Can you argue for both the pros and the cons in using HTML for your APIs, [like Gustaf does](http://www.jayway.com/?p=13994)? If you cannot, then I also cannot believe you're taking the best decision for your APIs' sake. You're taking the best decision for your own sake. You're believing in your decision because you choose to believe it, not because you're convinced by it.
+
+Update 2013-04-21: Jon Moore correctly spotted that I referred to HTML as having *presentation*, instead of *document* semantics. I corrected that, but my error had a bit of a involuntary meaning - how many websites do you see using HTML as a document markup, instead of presentation markup?
