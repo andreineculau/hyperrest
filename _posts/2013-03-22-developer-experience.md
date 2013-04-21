@@ -6,7 +6,7 @@ tags: developer experience convenience client
 published: true
 ---
 
-Ronnie Mitra [@mitraman](https://twitter.com/mitraman) had a consistent talk at [@nordicapis](https://twitter.com/nordicapis) (Stockholm Mar'21 2013), with a catchy title **Developer Experience** - [slides](http://www.slideshare.net/rnewton/the-i-is-for-interaction), [story](//storify.com/andreineculau/developer-experience), [video to come](#). If you missed it, the essence is on his [blog post](http://mitraman.wordpress.com/tag/developer-experience/).
+Ronnie Mitra [@mitraman](https://twitter.com/mitraman) had a consistent talk at [@nordicapis](https://twitter.com/nordicapis) (Stockholm Mar'21 2013), with a catchy title **Developer Experience** - [slides](http://www.slideshare.net/rnewton/the-i-is-for-interaction), [story](//storify.com/andreineculau/developer-experience), [video](http://www.youtube.com/watch?v=dQPRELMJOPA). If you missed it, the essence is on his [blog post](http://mitraman.wordpress.com/tag/developer-experience/).
 
 He had almost a "philosophy of science" touch, talking about consuming and designing (with the purpose of serving) in terms of fitting [a square peg in a round hole](http://en.wikipedia.org/wiki/Square_peg_in_a_round_hole) - ok, triangular hole in his slides. The developer that consumes comes with his mind set on a specific pattern on consumption, a specific set of tools, with their own advantages and quirks etc. Meanwhile the server group comes with its mind set on a specific pattern of delivering API messages, on a specific set of tools, also with their own advantages and quirks, etc.
 

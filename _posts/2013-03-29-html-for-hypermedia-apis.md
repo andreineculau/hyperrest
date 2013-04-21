@@ -6,7 +6,7 @@ tags: html experience client
 published: true
 ---
 
-Gustaf Nilsson Kotte [@gustaf_nk](https://twitter.com/gustaf_nk) also had a consistent talk at [@nordicapis](https://twitter.com/nordicapis) (Stockholm Mar'21 2013), touching on 6 topics all at once: **HTML, Hypermedia, APIs, Adaptive, Web, Design** - [slides](http://www.slideshare.net/GustafKotte/html-hypermedia-apis-and-adaptive-web-design-nordic-apis), [video to come](#). If you missed it, the essence is on [@jayway](https://twitter.com/jayway)'s [blog post](http://www.jayway.com/?p=13994).
+Gustaf Nilsson Kotte [@gustaf_nk](https://twitter.com/gustaf_nk) also had a consistent talk at [@nordicapis](https://twitter.com/nordicapis) (Stockholm Mar'21 2013), touching on 6 topics all at once: **HTML, Hypermedia, APIs, Adaptive, Web, Design** - [slides](http://www.slideshare.net/GustafKotte/html-hypermedia-apis-and-adaptive-web-design-nordic-apis), [video](http://www.youtube.com/watch?v=YCjaOrIhYGg). If you missed it, the essence is on [@jayway](https://twitter.com/jayway)'s [blog post](http://www.jayway.com/?p=13994).
 
 He followed in the footsteps of Jon Moore [@jon_moore](https://twitter.com/jon_moore) bringing the topic of [using HTML as the media type for your API](http://codeartisan.blogspot.se/2012/07/using-html-as-media-type-for-your-api.html) with a hands-on twist of adaptive web design. To summarize, he did a great work to keep it simple, valuable and most of all doable. He KITT - kept it to the tools.
 
