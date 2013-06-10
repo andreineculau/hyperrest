@@ -120,7 +120,9 @@ Above all, software and tests make for a great candidate of [eating your own dog
 
 > Oh, it has an ABNF specification? then write a validator and a parser.
 
-> Oh, it's about sending data? then write a generator. Oh, you need to test your software? then write some language-agnostic test data.
+> Oh, it's about sending data? then write a generator.
+
+> Oh, you need to test your software? then write some language-agnostic test data.
 
 > Oh, some tests fail, then don't forget that ABNFs are not all of the specification; sometimes not strict enough, sometimes in need of context, sometimes just too complex corner-cases.
 
