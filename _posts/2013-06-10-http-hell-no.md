@@ -2,7 +2,7 @@
 layout: strap-jekyll-default-post
 title: HTTP/REST is not big, nor healthy. It's hell no!
 categories: consume serve
-tags: software specification kitt
+tags: software specification kitt rfc pegjs
 published: true
 ---
 
