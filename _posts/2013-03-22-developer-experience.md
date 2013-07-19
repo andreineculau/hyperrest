@@ -44,7 +44,7 @@ There is one difference though between my point of view and others - don't start
 
 ## RESTit / HyperREST client
 
-On the same day as @nordicapis, I've release one of my "gems" created at [@klarna](https://twitter.com/klarna) called RESTit. It's a slim hypermedia client with a jQuery-like fluent interface, written in node.js. It's a prototype, mainly for eliciting API client requirements. I'll now care for it in my spare time as the [HyperREST client](https://github.com/andreineculau/hyperrest-client).
+On the same day as @nordicapis, I've release one of my "gems" created at [@klarna](https://twitter.com/klarna) called RESTit. It's a slim hypermedia client with a jQuery-like fluent interface, written in node.js. It's a prototype, mainly for eliciting API client requirements. I'll now care for it in my spare time as the [HyperREST client](https://github.com/hyperrest/client).
 
 I'm only mentioning it as part of this topic because that's how I know that a developer consumes the API client, not the API. That's the interface that they care for. Beyond that, it's mostly data structures (remember someone saying design your media-types?), and some relations - if we're talking about HyperREST. Media-types and relations are not to be ignored - on the contrary - but they won't be giving birth to clashes and friction between those that consume and those that serve the API. What's there to be so controversial - undefined or null, under_score or camelCase, flat or nested structures, URI relations or not, Unix or ISO timestamps? Some of those discussions will popup, you will have to spend proper time on naming, some will agree, some won't agree with the outcome, but nobody will end up hating it either.
 

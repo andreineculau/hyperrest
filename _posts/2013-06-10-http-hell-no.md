@@ -83,11 +83,11 @@ My efforts go in this direction, as it is rather clear that HTTP APIs will grow 
 
 1. Meet the [HTTP decision diagram](https://github.com/andreineculau/http-decision-diagram/tree/master/v4). Introduced several years ago by [Alan Dean](https://twitter.com/adean) as [http-headers-status](http://code.google.com/p/http-headers-status/) and then built into Erlang, Ruby and Clojure, the diagram is an abstract way to think of a HTTP server implementation. The diagram allows for a binary-transition Finite State Machine to decide on the proper HTTP status code and required HTTP headers. With that in mind, it makes use of defined callbacks, some with boolean, some with mixed outputs to decide what is the next proper transition. You can [watch Sean Cribbs at Øredev Conference](http://vimeo.com/20784244) speaking on how this is helpful and how it (v3; Alan Dean's version) is implemented in Webmachine (Erlang).
 
-1. Meet [an implementation of the v4 diagram's FSM in NodeJS](https://github.com/andreineculau/hyperrest-machine), under the name [hyperrest-machine](https://github.com/andreineculau/hyperrest-machine). An Erlang/Elixir implementation is coming.
+1. Meet [an implementation of the v4 diagram's FSM in NodeJS](https://github.com/hyperrest/machine), under the name [hyperrest-machine](https://github.com/hyperrest/machine). An Erlang/Elixir implementation is coming.
 
-1. Meet [a simple iteration of a HTTP server that is using the v4 diagram's FSM](https://github.com/andreineculau/hyperrest-server), under the name [hyperrest-server](https://github.com/andreineculau/hyperrest-server).
+1. Meet [a simple iteration of a HTTP server that is using the v4 diagram's FSM](https://github.com/hyperrest/server), under the name [hyperrest-server](https://github.com/hyperrest/server).
 
-1. My plan is to do the same thing (HTTP decision diagram and implementation) for the HTTP client (most probably integrated into [my hypermedia client](https://github.com/andreineculau/hyperrest-client)) and the HTTP cache-proxy.
+1. My plan is to do the same thing (HTTP decision diagram and implementation) for the HTTP client (most probably integrated into [my hypermedia client](https://github.com/hyperrest/client)) and the HTTP cache-proxy.
 
 1. Meet [my first iteration of parsers & generators](https://github.com/andreineculau/otw/tree/master/like/HTTP) for what I call *tokenized* HTTP headers. When I started, I didn't know any better, so despite being smarter software than the average, it is still far from 100% compliance with the specification (I take the liberty, in spite of the usage of regular expressions, to label the weaknesses as being a victim of too liberal mumbo-jumbo; too harsh? then maybe you can have a look at a Set-Cookie header and the comma in the Expires parameter).
 

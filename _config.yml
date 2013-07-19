@@ -10,7 +10,7 @@ destination: ./_site
 auto: true
 server: true
 server_port: 4000
-baseurl: &base_url /hyperrest
+baseurl: &base_url /
 base_url: *base_url
 #url: http://localhost:4000
 
@@ -83,10 +83,10 @@ kramdown:
 #theme
 name: HyperREST
 description: Don't stress about REST. Just REST!
-pages_url: http://andreineculau.github.com/hyperrest
-repo_url: https://github.com/andreineculau/hyperrest
-repo: hyperrest
-author: andreineculau
+pages_url: http://hyperrest.github.io
+repo_url: https://github.com/hyperrest
+repo: hyperrest.github.io
+author: hyperrest
 authors:
   andreineculau:
     display_name: Andrei Neculau
@@ -105,8 +105,8 @@ comments:
   enabled: true
   github:
     enabled: false
-    author: andreineculau
-    repo: hyperrest
+    author: hyperrest
+    repo: hyperrest.github.io
     id: null # specify on each page/post
   twitter:
     enabled: true
