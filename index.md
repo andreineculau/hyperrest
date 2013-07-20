@@ -10,11 +10,11 @@ layout: strap-jekyll-default-archive
         hyperrest
         <br>
         <div class="btn-group">
-            <btn class="btn btn-primary disabled">envision</btn>
-            <btn class="btn btn-info disabled">spec</btn>
-            <btn class="btn btn-success disabled">mock</btn>
-            <btn class="btn btn-warning disabled">consume</btn>
-            <btn class="btn btn-danger disabled">serve</btn>
+            <btn class="btn btn-primary btn-mini disabled">envision</btn>
+            <btn class="btn btn-info btn-mini disabled">spec</btn>
+            <btn class="btn btn-success btn-mini disabled">mock</btn>
+            <btn class="btn btn-warning btn-mini disabled">consume</btn>
+            <btn class="btn btn-danger btn-mini disabled">serve</btn>
         </div>
     </h3>
     <p>
