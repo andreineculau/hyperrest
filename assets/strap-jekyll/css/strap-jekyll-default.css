@@ -77,25 +77,9 @@ a:hover > code {
 
 
 /* Page META */
-span.page-meta {
-    margin-left:30px;
-}
-
 .page-meta .page-categories .btn-group button:not(.dropdown-toggle),
 .page-meta .page-tags .btn-group button:not(.dropdown-toggle) {
     cursor:default;
-}
-
-.page-meta .page-categories .btn-group,
-.page-meta .page-tags .btn-group {
-    opacity:0.25;
-    filter:alpha(opacity=25);
-}
-
-.page-meta .page-categories:hover .btn-group,
-.page-meta .page-tags:hover .btn-group {
-    opacity:1;
-    filter:alpha(opacity=100);
 }
 
 .page-meta .page-date {
@@ -112,6 +96,23 @@ span.page-meta {
 
 /* List posts */
 #content ul.posts {}
+
+span.page-meta {
+    display:block;
+    clear:left;
+}
+
+span.page-meta .page-categories .btn-group,
+span.page-meta .page-tags .btn-group {
+    opacity:0.25;
+    filter:alpha(opacity=25);
+}
+
+.post:hover span.page-meta .page-categories .btn-group,
+.post:hover span.page-meta .page-tags .btn-group {
+    opacity:1;
+    filter:alpha(opacity=100);
+}
 
 
 /* Single post */
