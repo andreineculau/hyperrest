@@ -4,6 +4,9 @@ layout: strap-jekyll-default-archive
 
 <div class="hero-unit">
     <h3>
+        <a style="float:left;margin:0 25px" href="http://www.flickr.com/photos/starrynight1/4243967687/" title="Snoopy goes to bed - O Snoopy vai para a cama by * starrynight1, on Flickr"><img src="http://farm5.staticflickr.com/4036/4243967687_4eb3109bda_s.jpg" width="75" height="75" alt="Snoopy goes to bed - O Snoopy vai para a cama"></a>
+        hyperrest
+        <br>
         <div class="btn-group">
             <btn class="btn btn-primary disabled">envision</btn>
             <btn class="btn btn-info disabled">spec</btn>
@@ -11,8 +14,6 @@ layout: strap-jekyll-default-archive
             <btn class="btn btn-warning disabled">consume</btn>
             <btn class="btn btn-danger disabled">serve</btn>
         </div>
-        &mdash;
-        hyperrest
     </h3>
     <p>
         <blockquote class="twitter-tweet"><p>the middle way between giving REST to Web APIs, and switching to Hypermedia: HyperREST. Which is neatly in line with <a href="http://t.co/dhCNqZ9P" title="http://en.wikipedia.org/wiki/Stasis_(fiction)">en.wikipedia.org/wiki/Stasis_(f…</a></p>&mdash; Andrei Neculau (@andreineculau) <a href="https://twitter.com/andreineculau/status/268773840241434627" data-datetime="2012-11-14T17:54:11+00:00">November 14, 2012</a></blockquote>
@@ -23,7 +24,6 @@ layout: strap-jekyll-default-archive
         Or dives into deep REST. Whatever makes you sleep better.
     </p>
 </div>
-
 
 <div class="hero-unit">
     <h3>andreineculau</h3>
