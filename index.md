@@ -2,6 +2,8 @@
 layout: strap-jekyll-default-archive
 ---
 
+{% include strap-jekyll/default/vars.html %}
+
 <div class="hero-unit">
     <h3>
         <a style="float:left;margin:0 25px" href="http://www.flickr.com/photos/starrynight1/4243967687/" title="Snoopy goes to bed - O Snoopy vai para a cama by * starrynight1, on Flickr"><img src="http://farm5.staticflickr.com/4036/4243967687_4eb3109bda_s.jpg" width="75" height="75" alt="Snoopy goes to bed - O Snoopy vai para a cama"></a>
