@@ -19,7 +19,6 @@ show_drafts: false
 markdown: kramdown
 permalink: /:year-:month-:day-:title
 relative_permalinks: false
-lsi: false
 paginate: true
 #exclude:
 #include:
