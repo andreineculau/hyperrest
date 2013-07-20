@@ -7,16 +7,19 @@ destination: ./_site
 #plugins: ./_plugins
 
 #others
-auto: true
-server: true
-server_port: 4000
+host: 0.0.0.0
+port: 4000
 baseurl: &base_url ""
 base_url: *base_url
 #url: http://localhost:4000
+timezone: Europe/Stockholm
 
 future: false
+show_drafts: false
 markdown: kramdown
 permalink: /:year-:month-:day-:title
+relative_permalinks: false
+lsi: false
 paginate: true
 #exclude:
 #include:
