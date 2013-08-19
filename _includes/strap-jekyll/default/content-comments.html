@@ -1,3 +1,4 @@
+{% include strap-jekyll/default/vars.html %}
 <div id="page-comments">
   {% if site.comments.twitter and site.comments.twitter.enabled == true and page_author.twitter %}
     <a href="https://twitter.com/intent/tweet?screen_name={{ page_author.twitter }}&amp;text={{ site.comments.twitter.text }}&amp;url={{ site_pages_url | escape }}{{ page.url | escape }}">{{ text.leave_a_comment_on_twitter_to }} @{{ page_author.twitter }}</a>
