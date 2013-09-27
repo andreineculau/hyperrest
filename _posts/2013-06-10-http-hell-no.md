@@ -79,7 +79,7 @@ And what is the best way to forget, but "not even knowing, in the first place"!
 
 My efforts go in this direction, as it is rather clear that HTTP APIs will grow in numbers, that I will contribute to that by both consuming and serving them, and that I really don't want to repeatedly implement, nor discuss the same stuff over and over again.
 
-[![#httpdd v4](https://rawgithub.com/andreineculau/http-decision-diagram/master/v4/http-decision-diagram-v4.png "#httpdd v4")](https://rawgithub.com/andreineculau/http-decision-diagram/master/v4/http-decision-diagram-v4.png)
+[![#httpdd v4](https://rawgithub.com/andreineculau/http-decision-diagram/master/v4/httpdd.png "#httpdd v4")](https://rawgithub.com/andreineculau/http-decision-diagram/master/v4/httpdd.png)
 
 1. Meet the [HTTP decision diagram](https://github.com/andreineculau/http-decision-diagram/tree/master/v4). Introduced several years ago by [Alan Dean](https://twitter.com/adean) as [http-headers-status](http://code.google.com/p/http-headers-status/) and then built into Erlang, Ruby and Clojure, the diagram is an abstract way to think of a HTTP server implementation. The diagram allows for a binary-transition Finite State Machine to decide on the proper HTTP status code and required HTTP headers. With that in mind, it makes use of defined callbacks, some with boolean, some with mixed outputs to decide what is the next proper transition. You can [watch Sean Cribbs at Øredev Conference](http://vimeo.com/20784244) speaking on how this is helpful and how it (v3; Alan Dean's version) is implemented in Webmachine (Erlang).
 
