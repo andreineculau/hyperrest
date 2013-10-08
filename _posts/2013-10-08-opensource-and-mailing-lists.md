@@ -2,7 +2,7 @@
 layout: strap-jekyll-default-post
 title: Opensource and mailing lists
 categories: improve
-tags: specification feedback
+tags: specification feedback rfc
 published: true
 ---
 
