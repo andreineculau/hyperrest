@@ -11,7 +11,7 @@ The title of this post may not seem related to REST, not even HTTP, but it is so
 
 ## Context
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/alexkli">@alexkli</a> <a href="https://twitter.com/stilkov">@stilkov</a> <a href="https://twitter.com/jasnell">@jasnell</a> HTTP/2.0 is defined in an open-to-all IETF Working Group, not on Twitter or in blog posts :-). Join the WG.</p>&mdash; Julian Reschke (@jreschke) <a href="https://twitter.com/jreschke/statuses/355270697402114049">July 11, 2013</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none"><p><a href="https://twitter.com/alexkli">@alexkli</a> <a href="https://twitter.com/stilkov">@stilkov</a> <a href="https://twitter.com/jasnell">@jasnell</a> HTTP/2.0 is defined in an open-to-all IETF Working Group, not on Twitter or in blog posts :-). Join the WG.</p>&mdash; Julian Reschke (@jreschke) <a href="https://twitter.com/jreschke/statuses/355270697402114049">July 11, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet"><p>one of my most common email replies: &quot;thanks, but please email this to the <a href="https://twitter.com/search?q=%23libcurl&amp;src=hash">#libcurl</a> mailing list instead of me privately&quot; ...</p>&mdash; Daniel Stenberg (@bagder) <a href="https://twitter.com/bagder/statuses/383703368709193729">September 27, 2013</a></blockquote>
@@ -68,7 +68,7 @@ If you think that anyone saying no to mailing lists is saying yes to Twitter, bl
 
 Daniel obviously did the right thing in not pursuing the issue in private, but wouldn't it have been better (for both parties, I'd reckon) to continue with "I think you have a point and I have forwarded your message to the mailing list. Subscribe if you want to follow-up. Thanks"? The person may or may not subscribe, the mailing list thread might quickly end up on a dead road because the others need more insight, more context and the author is not on the mailing list to provide more information, but at least the question surfaced, it will be searchable in the archive, if it came via Twitter then the mailing list thread may have an URI as a reference starting point, etc
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/bagder">@bagder</a> mmm. opensource is not about a group, it’s about individuals fixing/following mostly tiny bits, not an atomic codebase</p>&mdash; Andrei Neculau (@andreineculau) <a href="https://twitter.com/andreineculau/statuses/384235720376078336">September 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none"><p><a href="https://twitter.com/bagder">@bagder</a> mmm. opensource is not about a group, it’s about individuals fixing/following mostly tiny bits, not an atomic codebase</p>&mdash; Andrei Neculau (@andreineculau) <a href="https://twitter.com/andreineculau/statuses/384235720376078336">September 29, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 > Judge a man by his questions rather than his answers. *Voltaire*
@@ -77,7 +77,7 @@ I have no idea if this reaction of mine is shared by others, and I don't have a 
 
 Because that's what this is. You're talking in void, unless it's on a mailing-list. Can you imagine one of the two authors meeting a friend or a colleague in real life, and them going "ahh, can you please post this to the mailing list? I cannot process it otherwise" ? I bet they don't do that, but since that doesn't scale, or since not everyone is equally/more experienced than that friend to have a qualified input on the matter, then mailing lists are one way to keep the noise down. "Subscribe, or get off my lawn!" That may sound alright, but it's not - if you want to keep the noise down, then walk the talk: allow as many to join the discussion, and then just don't reply, mute or even close the issue in a split of a second.
 
-<blockquote class="twitter-tweet"><p><a href="https://twitter.com/andreineculau">@andreineculau</a> in my world, open source is about open development so that as many as possible can participate =&gt; keep all discussions open</p>&mdash; Daniel Stenberg (@bagder) <a href="https://twitter.com/bagder/statuses/384237141804740608">September 29, 2013</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none"><p><a href="https://twitter.com/andreineculau">@andreineculau</a> in my world, open source is about open development so that as many as possible can participate =&gt; keep all discussions open</p>&mdash; Daniel Stenberg (@bagder) <a href="https://twitter.com/bagder/statuses/384237141804740608">September 29, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Participation is as much about transparency as about the ability to pitch in. So instead of pushing everything down on everyone and asking them to filter out what they consider as "noise", you (the author/owner/moderator/admin) filter the real noise and accept as many channels for questions to be raised.
