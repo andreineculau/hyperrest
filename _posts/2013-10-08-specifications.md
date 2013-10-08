@@ -24,7 +24,7 @@ In contrast, have a look at [WHATWG's URL spec](http://url.spec.whatwg.org). I w
 <blockquote class="twitter-tweet"><p>Instead of assuming that people are dumb, ignorant, and making mistakes, assume they are smart, doing their best, and that you lack context.</p>&mdash; Nicholas C. Zakas (@slicknet) <a href="https://twitter.com/slicknet/statuses/300625746966241280">February 10, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I'm not trying not to judge, specifically because I have no idea of the history/goal of this spec, but I cannot help it - I have some hands-on questions:
+I'm trying not to judge, specifically because I have no idea of the history/goal of this spec, but I cannot help it - I have some hands-on questions:
 
 1. *Align RFC 3986 and RFC 3987 with contemporary implementations and obsolete them in the process.*  
 - this is merely a confirmation of my hypothesis. The IETF specs have no reference implementation, and thus had "the bad luck" of being poorly implemented. They happened also because of lack of knowledge among developers of what a grammar parse is, but primarily it's an esoteric thing that the spec does not mention black on white for anyone to understand: "in order to parse a URI, use an ABNF or higher-level parser based on this grammar spec". I won't comment on it, but WHATWG is now obviously doing things asswards: let's write a spec based on the major implementations. Leaving that aside, the question is: **how come a 2005 RFC is old? what has aged about it?**
