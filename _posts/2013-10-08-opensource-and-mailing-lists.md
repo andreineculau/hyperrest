@@ -97,4 +97,4 @@ You can judge for yourself, but FWIW this is a misunderstanding IMHO as
 - I have **not** written one word **advocating for private emails** regarding opensource projects. His tweet is two-sided "no to private email, yes to mailing-lists", and I'm only tackling the second part, and furthermore it's only in the context of raising/contributing with issues (e.g. I can see X is not up to par with the spec), not asking support questions because you have an issue (e.g. I can't get X to run).
 - I am **not arguing that Daniel is wrong**; on the contrary, you can read "Daniel obviously did the right thing"
 - I thought **we evened out [any misunderstanding right from the beginning](https://twitter.com/bagder/statuses/383703368709193729)**
-- this is not an attach to Daniel, nor his tweet.. **it's a different side to the story of mailing lists**
+- this is not an attack to Daniel, nor his tweet.. **it's a different side to the story of mailing lists**
