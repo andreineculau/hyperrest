@@ -1,8 +1,8 @@
 ---
 layout: strap-jekyll-default-post
 title: Man overboard!
-categories:
-tags:
+categories: envision
+tags: specification implementation client server rfc
 published: true
 ---
 
