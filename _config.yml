@@ -165,102 +165,102 @@ sidebars:
     title: envision
     headers:
       - title: overview
-        url: /ch1_envision/
+        url: /2013-10-14-man-overboard #/ch1_envision/
       - title: the resources
-        url: /ch1_envision/the_resources.html
+        url: /2013-10-14-man-overboard #/ch1_envision/the_resources.html
       - title: the relations
-        url: /ch1_envision/the_relations.html
+        url: /2013-10-14-man-overboard #/ch1_envision/the_relations.html
       - title: the sitemap
-        url: /ch1_envision/the_sitemap.html
+        url: /2013-10-14-man-overboard #/ch1_envision/the_sitemap.html
       - title: and visualize
-        url: /ch1_envision/and_visualize.html
+        url: /2013-10-14-man-overboard #/ch1_envision/and_visualize.html
   - &sidebar_spec
     title: spec
     headers:
       - title: overview
-        url: /ch2_spec/
+        url: /2013-10-14-man-overboard #/ch2_spec/
       - title: the uniform interface
-        url:  /ch2_spec/the_uniform_interface.html
+        url: /2013-10-14-man-overboard # /ch2_spec/the_uniform_interface.html
         items:
           - title: methods
-            url: /ch2_spec/the_uniform_interface/methods.html
+            url: /2013-10-14-man-overboard #/ch2_spec/the_uniform_interface/methods.html
           - title: headers
-            url: /ch2_spec/the_uniform_interface/headers.html
+            url: /2013-10-14-man-overboard #/ch2_spec/the_uniform_interface/headers.html
           - title: status codes
-            url: /ch2_spec/the_uniform_interface/status_codes.html
+            url: /2013-10-14-man-overboard #/ch2_spec/the_uniform_interface/status_codes.html
           - title: errors
-            url: /ch2_spec/the_uniform_interface/errors.html
+            url: /2013-10-14-man-overboard #/ch2_spec/the_uniform_interface/errors.html
           - title: query
-            url: /ch2_spec/the_uniform_interface/query.html
+            url: /2013-10-14-man-overboard #/ch2_spec/the_uniform_interface/query.html
       - title: the versioning strategy
-        url: /ch2_spec/the_versioning_strategy.html
+        url: /2013-10-14-man-overboard #/ch2_spec/the_versioning_strategy.html
       - title: the operations
-        url: /ch2_spec/the_operations.html
+        url: /2013-10-14-man-overboard #/ch2_spec/the_operations.html
       - title: the relations
-        url: /ch2_spec/the_relations.html
+        url: /2013-10-14-man-overboard #/ch2_spec/the_relations.html
       - title: the representations
-        url: /ch2_spec/the_representations.html
+        url: /2013-10-14-man-overboard #/ch2_spec/the_representations.html
       - title: via RESTpi
-        url: /ch2_spec/via_restpi.html
+        url: /2013-10-14-man-overboard #/ch2_spec/via_restpi.html
   - &sidebar_mock
     title: mock
     headers:
       - title: overview
-        url: /ch3_mock/
+        url: /2013-10-14-man-overboard #/ch3_mock/
       - title: the documentation
-        url: /ch3_mock/the_documentation.html
+        url: /2013-10-14-man-overboard #/ch3_mock/the_documentation.html
       - title: the server
-        url: /ch3_mock/the_server.html
+        url: /2013-10-14-man-overboard #/ch3_mock/the_server.html
         items:
         - title: via Apiary
-          url: /ch3_mock/the_server/via_apiary.html
+          url: /2013-10-14-man-overboard #/ch3_mock/the_server/via_apiary.html
       - title: and test
-        url: /ch3_mock/and_test.html
+        url: /2013-10-14-man-overboard #/ch3_mock/and_test.html
         items:
         - title: via RedBot
-          url: /ch3_mock/and_test/via_redbot.html
+          url: /2013-10-14-man-overboard #/ch3_mock/and_test/via_redbot.html
   - &sidebar_consume
     title: consume
     headers:
       -
         title: overview
-        url: /ch4_consume/
+        url: /2013-10-14-man-overboard #/ch4_consume/
       - title: the mock
-        url: /ch4_consume/the_mock.html
+        url: /2013-10-14-man-overboard #/ch4_consume/the_mock.html
         items:
         - title: via HyperREST Explorer
-          url: /ch4_consume/the_mock/via_hyperrest_explorer.html
+          url: /2013-10-14-man-overboard #/ch4_consume/the_mock/via_hyperrest_explorer.html
         - title: via HyperREST Client
-          url: /ch4_consume/the_mock/via_hyperrest_client.html
+          url: /2013-10-14-man-overboard #/ch4_consume/the_mock/via_hyperrest_client.html
         - title: "via HTTP clients"
-          url: /ch4_consume/the_mock/via_http_clients.html
+          url: /2013-10-14-man-overboard #/ch4_consume/the_mock/via_http_clients.html
       - title: and iterate
-        url: /ch4_consume/and_iterate.html
+        url: /2013-10-14-man-overboard #/ch4_consume/and_iterate.html
   - &sidebar_serve
     title: serve
     headers:
       - title: overview
-        url: /ch5_serve/
+        url: /2013-10-14-man-overboard #/ch5_serve/
       - title: the uniform interface
-        url: /ch5_serve/the_uniform_interface.html
+        url: /2013-10-14-man-overboard #/ch5_serve/the_uniform_interface.html
         items:
         - title: via Webmachine
-          url: /ch5_serve/the_uniform_interface/via_webmachine.html
+          url: /2013-10-14-man-overboard #/ch5_serve/the_uniform_interface/via_webmachine.html
         - title: via HyperREST Machine
-          url: /ch5_serve/the_uniform_interface/via_hyperrest_machine.html
+          url: /2013-10-14-man-overboard #/ch5_serve/the_uniform_interface/via_hyperrest_machine.html
       - title: and REST!
-        url: /ch5_serve/and_rest.html
+        url: /2013-10-14-man-overboard #/ch5_serve/and_rest.html
   - &sidebar_improve
     title: improve
     headers:
       - title: overview
-        url: /ch6_improve/
+        url: /2013-10-14-man-overboard #/ch6_improve/
       - title: performance
-        url: /ch6_improve/performance.html
+        url: /2013-10-14-man-overboard #/ch6_improve/performance.html
       - title: the representations
-        url: /ch6_improve/the_representations.html
+        url: /2013-10-14-man-overboard #/ch6_improve/the_representations.html
       - title: the resources
-        url: /ch6_improve/the_resources.html
+        url: /2013-10-14-man-overboard #/ch6_improve/the_resources.html
   -
     title: ...
     headers:
