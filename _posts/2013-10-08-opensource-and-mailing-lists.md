@@ -1,7 +1,7 @@
 ---
 layout: strap-jekyll-default-post
 title: Opensource and mailing lists
-categories: improve
+categories: envision
 tags: specification feedback rfc
 published: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: strap-jekyll-default-post
 title: Specifications
-categories: improve
+categories: envision improve
 tags: specification implementation design
 published: true
 ---
