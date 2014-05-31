@@ -1,14 +1,22 @@
-title:            Scribble
-description:      A jekyll theme. Because I scribble.
-url:              # Site url.
-baseurl:          /klotter
-signoff:          # Your name.
-disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
-google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+title:            HyperREST
+description:      Don't stress about REST! Just REST!
+url:              http://hyperrest.github.io
+baseurl:
+signoff:          Andrei
+disqus_shortname: andreineculauhyperrest
+google_analytics: UA-38765969-1
 
 links:
   - name: About
-    url: /klotter/about.html
+    url: /about.html
+  - name: API icons
+    url: http://hyperrest.github.io/api-icons/
+  - name: hyperrest/client
+    url: http://github.com/hyperrest/client
+  - name: hyperrest/...
+    url: http://github.com/hyperrest
+  - name: for-GET/...
+    url: http://github.com/for-GET
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: Europe/Stockholm
