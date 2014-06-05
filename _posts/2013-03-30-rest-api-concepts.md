@@ -24,6 +24,9 @@ My analogy has some tight <i class="icon-rest-coupling"> </i> coupling with the 
 
 <i class="icon-api-payload"> </i> Payload
 
+---
+
+
 ## Entity m:n Resource
 
 An <i class="icon-api-entity"> </i> entity may be your invoice (the concept, not the paper) for electricity for 2013 Mar 1-31st. The <i class="icon-api-resource"> </i> resource, on the other hand, holds your latest invoice. So the same resource, this inbox that you access every month, will link to some magical/undefined concept that is behind the curtains of the electrical company, that we refer to as *the invoice*.
@@ -34,6 +37,9 @@ If you're stuck thinking in terms of URIs, here goes. There's `https://example.c
 and the same <i class="icon-api-resource"> </i> resource can use multiple <i class="icon-api-entity"> </i> entities.  
 Neither the former, nor the latter, identifies the other.
 
+---
+
+
 ## Resource 1:n Representation
 
 "The latest invoice" <i class="icon-api-resource"> </i> resource can be represented by a webpage, an email message, a PDF document, a paper invoice, an electronic invoice in your online bank account, an audio invoice for the visually impaired, etc. These are all <i class="icon-api-representation"> </i> representations of the same concept, of the same resource.
@@ -42,6 +48,9 @@ Neither the former, nor the latter, identifies the other.
 *The same <i class="icon-api-resource"> </i> inbox can accept or provide multiple <i class="icon-api-representation"> </i> envelopes.*  
 The latter does not identify the former.
 
+---
+
+
 ## Representation n:1 Content-Type
 
 These <i class="icon-api-representation"> </i> representations come with meta descriptors, <i class="icon-http-header"> </i> headers, to let you know how to interact with them. The <i class="icon-http-content-type"> </i> Content-Type header describes the content of the <i class="icon-api-representation"> </i> representation, in terms of semantics and syntax. `text/html` for a webpage, `application/pdf` for a PDF document, `audio/mp3` for audio content in MP3 format.
@@ -49,6 +58,9 @@ These <i class="icon-api-representation"> </i> representations come with meta de
 > The content of multiple <i class="icon-api-representation"> </i> representations can be described by the same <i class="icon-http-content-type"> </i> Content-Type.  
 *The content of multiple <i class="icon-api-representation"> </i> envelopes can be described by the same <i class="icon-http-content-type"> </i> cover.*  
 The latter does not identify the former.
+
+---
+
 
 ## Representation n:1 Payload
 
@@ -60,11 +72,15 @@ A <i class="icon-api-representation"> </i> representation without its <i class="
 *Multiple <i class="icon-api-representation"> </i> envelopes can share the same <i class="icon-api-payload"> </i> letter.*  
 The latter is part of the former.
 
+---
+
+
 ## TL;DR
 
 (<i class="icon-api-entity"> </i>)\* ~ <i class="icon-api-resource"> </i> = (<i class="icon-api-representation"> </i> = <i class="icon-http-content-type"> </i> + <i class="icon-api-payload"> </i>)\*
 
 ---
+
 
 ## Off-topic: Content-Type vs Media-Type
 
