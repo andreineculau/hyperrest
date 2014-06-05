@@ -1,4 +1,6 @@
-@import url("normalize.css");
+@import url('normalize.css');
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css');
+@import url('//rawgithub.com/hyperrest/api-icons/v0.0.2/hyperrest-api-icons.css');
 
 h1, h2, h3, h4, h5, strong, b {
   font-weight: 600;
@@ -258,4 +260,4 @@ p.notFound {
   text-align: center;
 }
 
-@import url("responsive.css");
+@import url('responsive.css');
