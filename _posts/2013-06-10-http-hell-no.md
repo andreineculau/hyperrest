@@ -73,7 +73,9 @@ The worst of it all is the possibility that we would repeat history, just under 
 
 We need to forget about HTTP methods, headers, status codes, resources, and the faster we do that, the better.
 
-<iframe src="http://player.vimeo.com/video/45768176?title=0&amp;byline=0&amp;portrait=0" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/45768176">Promote Knowledge Management (2)</a> from <a href="http://vimeo.com/andreineculau">Andrei Neculau</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<iframe src="http://player.vimeo.com/video/45768176?title=0&amp;byline=0&amp;portrait=0" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+<p><a href="http://vimeo.com/45768176">Promote Knowledge Management (2)</a> from <a href="http://vimeo.com/andreineculau">Andrei Neculau</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 And what is the best way to forget, but "not even knowing, in the first place"!
 
