@@ -8,6 +8,8 @@ comments: true
 share: true
 ---
 
+UPDATE 2014-06-05: This application got turned down, see below.
+
 Heard of [Stripe Open-Source Retreat](https://stripe.com/blog/stripe-open-source-retreat)? This post is an open-source application letter for **for-get HTTP** - [https://github.com/for-GET](https://github.com/for-GET).
 
 ## for-GET HTTP
@@ -99,3 +101,27 @@ Click events for a brief description.
 Disqus bellow or [email](mailto:andrei.neculau@gmail.com) is your friend.
 
 Fingers crossed.
+
+---
+
+
+## UPDATE 2014-06-05: STRIPE'S REPLY
+
+Hey,
+
+Thanks a lot for applying to the Open Source Retreat. Unfortunately,
+we aren't able to accept your project. We ended up with about 120
+applications, and ultimately only had 2 available slots, which meant
+we had to turn away a lot of projects that we would have loved to
+sponsor. We'll be announcing our selectees soon; watch our Twitter
+feed (https://twitter.com/stripe) for details.
+
+We're treating the retreat as an experiment, but the strong interest
+we've seen makes it likely we'll do something like it again (and we
+hope you'll apply if/when we do). In any case, we expect we'll learn a
+lot from this run and hopefully have lessons to share back with the
+community. We've also had a number of companies express interest in
+doing something similar, so hopefully other similar opportunities will
+arise soon.
+
+- gdb
